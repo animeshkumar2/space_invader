@@ -89,10 +89,10 @@ while running:
         playerX = 748
     for i in range(6):
         if enemyX[i] <= 0:
-            enemyX_change[i] = +.4
+            enemyX_change[i] = +.5
             enemyY[i] += enemyY_change[i]
         elif enemyX[i] >= 768:
-            enemyX_change[i] = -.4
+            enemyX_change[i] = -.5
             enemyY[i] += enemyY_change[i]
         enemyX[i] += enemyX_change[i]
         enemy(enemyX[i], enemyY[i], i)
